@@ -22,7 +22,7 @@ class request {
 
 
    public function __construct() {
-
+       //  data clean in url
        $this->request_uri             =           $_SERVER['REQUEST_URI'];
        $this->server_software         =           $_SERVER['SERVER_SOFTWARE'];
        $this->server_porotocol        =           $_SERVER['SERVER_POROTOCOL'] ?? null;
@@ -40,5 +40,10 @@ class request {
 
    public function getCurrentRoute(){
        return str_replace(\BASE_URL,'',$this->request_uri);
+   }
+
+   public function Redirect($url){
+     header('Location:'.$url);
+     die();
    }
 }
