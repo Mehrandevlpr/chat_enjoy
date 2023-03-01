@@ -14,6 +14,7 @@ class ComposerStaticInit3d605a9fdf9140a7a130abd6f616d0a5
         'M' => 
         array (
             'Monolog\\' => 8,
+            'Medoo\\' => 6,
         ),
         'A' => 
         array (
@@ -29,6 +30,10 @@ class ComposerStaticInit3d605a9fdf9140a7a130abd6f616d0a5
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
         ),
         'App\\' => 
         array (

@@ -22,9 +22,6 @@ class router{
             die(); 
          }
 
-
-
-
          
         ///// in class : check if method exists  
         //////// check if is request method is correct

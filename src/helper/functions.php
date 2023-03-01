@@ -10,14 +10,19 @@
 
 
   function webroute() {
-       return include \BASE_PATH . "config_route/web.php";
+       return include \BASE_PATH . "configs/web.php";
   }
+
+  function configs($key) {
+     $config = include \BASE_PATH . "configs/database.php";
+     return $config[$key];
+}
 
   function basePathTemplate($uri) {
        return basePath('template'.DIRECTORY_SEPARATOR.$uri);
   }
 
   function baseUrlTemplate($uri) {
-     return baseUrl('template'.DIRECTORY_SEPARATOR.$uri);
+     return baseUrl('template/'.$uri);
   }
 
