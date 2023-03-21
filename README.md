@@ -2,9 +2,10 @@
 
 _____________________________
 
-|     name    |     done    |
+|   property  |    done     |
 | ----------- | ----------- |
 |   RealTime  |    true     |
 |     MVC     |    true     |
+|     Lib     |    false    |
 
->Chat RealTime 
+
