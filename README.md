@@ -4,8 +4,8 @@ _____________________________
 
 |   property  |    done     |
 | ----------- | ----------- |
-|   RealTime  |    true     |
 |     MVC     |    true     |
+|   RealTime  |    false    |
 |     Lib     |    false    |
 
 
