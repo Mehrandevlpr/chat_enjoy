@@ -1,8 +1,9 @@
 <?php
+namespace App\models\connection;
 
 interface I_connection{
      
-     public function read($columns,$where,$join);
+     public function read($columns,$where);
      public function update($data, $where);
      public function sum($column, $where);
      public function action($callback);

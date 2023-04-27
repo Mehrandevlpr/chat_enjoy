@@ -3,18 +3,19 @@
 namespace App\models\connection;
 
 use App\exceptions\connection\PdoException ;
-use I_connection;
 use Medoo\Medoo;
 
-abstract class  connection implements I_connection{
+abstract class connection implements I_connection{
 
 
      protected $connection;
+     protected static $table;
      
-     public function __construct($medoo){
+     public function __construct(){
+
           try {
                global $dbh;
-               $this->connection = $medoo ;
+               $this->connection = $dbh ;
              } catch(PDOException $e) {
                throw new PdoException();
                die();
@@ -22,35 +23,58 @@ abstract class  connection implements I_connection{
      }
 
      public function create($values){
-        return $this->connection->insert(static::class,$values); 
+         
+         return  $this->connection->insert( static::$table , $values ); 
      }
 
-     public function read($columns, $where, $join){
-          return $this->connection->select(static::class,$columns,$where,$join); 
+     public function read($columns, $where=[]){
+          return $this->connection->select( static::$table , $columns , $where); 
      }
+
      public function update($data, $where){
-          return $this->connection->update(static::class,$data,$where);  
+
+          return $this->connection->update(static::$table,$data,$where);  
      }
+     public function last_query(){
+
+          return $this->connection->last();  
+     }
+     public function log_info(){
+
+          return $this->connection->log();  
+     }
+
      public function delete($where){
-          return $this->connection->delete(static::class,$where); 
+
+          return $this->connection->delete(static::$table,$where); 
      }
+
      public function findBy($data){ //medoo get 
-          return $this->connection->delete(static::class,$data); 
+
+          return $this->connection->delete(static::$table,$data); 
 
      }
+
      public function count($where){
-          return $this->connection->count(static::class,$where); 
+
+          return $this->connection->count(static::$table,$where); 
 
      }
+
      public function sum($column, $where){
-          return $this->connection->sum(static::class,$column, $where); 
+
+          return $this->connection->sum(static::$table,$column, $where); 
 
      }
+
      public function action($callback){
-          return $this->connection->action(static::class,$callback); 
+
+          return $this->connection->action(static::$table,$callback); 
 
      }
+
      public function query($sql){
+          
           return $this->connection->query($sql); 
 
      }

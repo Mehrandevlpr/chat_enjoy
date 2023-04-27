@@ -18,6 +18,7 @@ class request {
    public  $server_software;
    public  $server_porotocol;
    public  $request_scheme;
+   public  $remote_add;
 
 
 
@@ -31,6 +32,7 @@ class request {
        $this->query_string            =           $_SERVER['QUERY_STRING'];
        $this->script_name             =           $_SERVER['SCRIPT_NAME'];
        $this->remote_port             =           $_SERVER['REMOTE_PORT'];
+       $this->remote_add             =           $_SERVER['REMOTE_ADDR'];
        $this->http_host               =           $_SERVER['HTTP_HOST'];
        $this->http_accept_encoding    =           $_SERVER['HTTP_ACCEPT_ENCODING'];
        $this->http_user_agent         =           $_SERVER['HTTP_USER_AGENT'];

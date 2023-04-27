@@ -1,0 +1,1 @@
+<span class='pulse-button'>+</span>
