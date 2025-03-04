@@ -20,8 +20,8 @@ A brief description of your project and its purpose.
 | ---                         | ---   |
 | - ✅ MVC                    | Done  |
 | - ✅ RealTime               | Done  |
-| - ✅ Library                | False |
-| - ✅ MultiUser              | False |
+| - ✅ Library                | Done  |
+| - ✅ MultiUser              | Done  |
 
 
 ## 🛠 UnitTest
