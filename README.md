@@ -1,7 +1,7 @@
 ## chat enjoy 🛬
 
 
-# 🚀 Project File Shop
+# 🚀 Project Chat
 
 A brief description of your project and its purpose.
 
