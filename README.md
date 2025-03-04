@@ -18,10 +18,10 @@ A brief description of your project and its purpose.
 
 | Inline formatting | Shortcut |
 | ---                         | ---   |
-| - ✅ MultiUser              | Done  |
+| - ✅ MVC                    | Done  |
 | - ✅ RealTime               | Done  |
-| - ✅  Library               | False |
-| - ✅ RealTime               | False |
+| - ✅ Library                | False |
+| - ✅ MultiUser              | False |
 
 
 ## 🛠 UnitTest
