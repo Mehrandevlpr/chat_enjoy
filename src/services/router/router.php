@@ -20,7 +20,7 @@ class router{
         $currentUri  = $request->getCurrentRoute();
         $getAllRoute = webroute();
 
-        //  var_dump($getAllRoute,$currentUri);
+        // Route for : {id}/single
         $uri_path = parse_url( $_SERVER['REQUEST_URI'] , PHP_URL_PATH );
         $uri_segments = explode( '/' , $uri_path );
         
