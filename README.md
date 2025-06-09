@@ -11,8 +11,9 @@ A brief description of your project and its purpose.
 | Inline formatting | Shortcut |
 | ---                         | ---   |
 | - ✅ MVC ( Pure PHP )       | Done  |
-| - ✅ RealTime               | Done  |
-| - ✅ Library                | Done  |
+| - ✅ RealTime chat          | Done  |
+| - ✅ Authentication         | Done  |
+| - ✅ Custom Template        | Done  |
 | - ✅ MultiUser              | Done  |
 
 
