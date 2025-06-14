@@ -8,7 +8,7 @@ A brief description of your project and its purpose.
 ## 📌 Features
 
 
-| Inline formatting | Shortcut |
+| Features | Status |
 | ---                         | ---   |
 | - ✅ MVC ( Pure PHP )       | Done  |
 | - ✅ RealTime chat          | Done  |
